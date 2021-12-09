@@ -13,6 +13,31 @@ const routes = [
     component: () => import('../components/Stew.vue')
   },
   {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../components/Contact.vue')
+  },
+  {
+    path: '/noodles',
+    name: 'Noodles',
+    component: () => import('../components/Noodles.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../components/Login.vue')
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: () => import('../components/Signup.vue')
+  },
+  {
+    path: '/curry',
+    name: 'Curry',
+    component: () => import('../components/Curry.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
