@@ -14,6 +14,7 @@
 import '@/assets/tailwind.css'
 import Navigation from '../components/Navigation.vue'
 import Recept from '../components/Recetp.vue'
+import RecepCard from '../components/RecepCard.vue'
 
 
 export default {
@@ -21,7 +22,9 @@ export default {
   components: {
 
     Navigation,
-    Recept
+    Recept,
+    RecepCard
+
     
   }
 }

@@ -15,6 +15,7 @@
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200"> Latest Recipes</h4>
                 <div class="mt-8 grid lg:grid-cols-3 gap-10"> 
                     <!-- cards go here-->
+                    <RecepCard />
                     <div class="card hover:shadow-lg">
                         <img src="../assets/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
@@ -72,3 +73,16 @@
                 </div>
             </div>
 </template>
+
+<script>
+
+import RecepCard from '../components/RecepCard.vue'
+
+
+export default {
+  name: 'Recept',
+  components: {
+    RecepCard   
+  }
+}
+</script>
