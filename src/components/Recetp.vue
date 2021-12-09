@@ -83,6 +83,30 @@ export default {
   name: 'Recept',
   components: {
     RecepCard   
+  },
+  data(){
+      return{
+          recipes: [
+              {
+                  img: '../assets/stew.jpg',
+                  time: '25 Mins',
+                  title: '5 Bean Chilli Stew',
+                  author:  'Recipe from Mario'
+              },
+              {
+                  img: '../assets/noodles.jpg',
+                  time: '25 Mins',
+                  title: 'Veg Noodles',
+                  author:  'Recipe from Mario'
+              },
+              {
+                  img: '../assets/curry.jpg',
+                  time: '25 Mins',
+                  title: 'Tofu Curry',
+                  author:  'Recipe from Mario'
+              },
+          ]
+      }
   }
 }
 </script>
