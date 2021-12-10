@@ -4,7 +4,7 @@
             <Navigation />
         </div> <!-- end nav -->
         <main class="px-16  py-6 bg-gray-100 md:col-span-2">
-            <Recept />
+            <Recipe />
         </main>
     </div>
 </template>
@@ -13,8 +13,8 @@
 // @ is an alias to /src
 import '@/assets/tailwind.css'
 import Navigation from '../components/Navigation.vue'
-import Recept from '../components/Recetp.vue'
-import RecepCard from '../components/RecepCard.vue'
+import Recipe from '../components/Recipe.vue'
+import RecipeCard from '../components/RecipeCard.vue'
 
 
 export default {
@@ -22,8 +22,8 @@ export default {
   components: {
 
     Navigation,
-    Recept,
-    RecepCard
+    Recipe,
+
 
     
   }

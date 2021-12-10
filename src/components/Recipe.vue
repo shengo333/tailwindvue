@@ -15,7 +15,7 @@
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200"> Latest Recipes</h4>
                 <div class="mt-8 grid lg:grid-cols-3 gap-10"> 
                     <!-- cards go here-->
-                    <RecepCard v-for="recipe in recipes" :recipe="recipe" :key="recipe.title"/>
+                    <RecipeCard v-for="recipe in recipes" :recipe="recipe" :key="recipe.title"/>
 
 
 
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import RecepCard from '../components/RecepCard.vue'
+import RecipeCard from './RecipeCard.vue'
 export default {
-  name: 'Recept',
+  name: 'Recipe',
   components: {
-    RecepCard   
+    RecipeCard   
   },
   data(){
       return{
