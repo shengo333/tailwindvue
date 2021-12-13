@@ -1,0 +1,25 @@
+{
+  "recipes": [
+    {
+        "img": "stew.jpg",
+        "time": "25 Mins",
+        "title": "5 Bean Chilli Stew",
+        "author":  "Recipe from Mario",
+        "key": "stew"
+    },
+    {
+        "img": "noodles.jpg",
+        "time": "25 Mins",
+        "title": "Veg Noodles",
+        "author":  "Recipe from Mario",
+        "key": "noodles"
+    },
+    {
+        "img": "curry.jpg",
+        "time": "25 Mins",
+        "title": "Tofu Curry",
+        "author":  "Recipe from Mario",
+        "key": "curry"
+    }
+  ]
+}

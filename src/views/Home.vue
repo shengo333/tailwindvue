@@ -41,27 +41,21 @@ export default {
   },
   data(){
       return{
-          recipes: [
-              {
-                  img: 'stew.jpg',
-                  time: '25 Mins',
-                  title: '5 Bean Chilli Stew',
-                  author:  'Recipe from Mario'
-              },
-              {
-                  img: 'noodles.jpg',
-                  time: '25 Mins',
-                  title: 'Veg Noodles',
-                  author:  'Recipe from Mario'
-              },
-              {
-                  img: 'curry.jpg',
-                  time: '25 Mins',
-                  title: 'Tofu Curry',
-                  author:  'Recipe from Mario'
-              },
-          ]
+          recipes: [],
+     }
+  },
+  methods: {
+      getData() {
+          console.log('Getting Data')
+          fetch('http://localhost:3000/recipes')
+            .then(response => response.json())
+            .then(data => this.recipes = data)
+            .catch(e => console.log(e))
       }
+  },
+  mounted() {
+      this.getData()
   }
 }
+
 </script>

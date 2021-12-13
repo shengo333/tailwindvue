@@ -2,7 +2,7 @@
     <div class="card hover:shadow-lg">
         <img :src="require(`@/assets/${recipe.img}`)" alt="stew" class="w-full h-32 sm:h-48 object-cover">
         <div class="m-4">
-        <router-link to="/Stew">
+        <router-link :to="recipe.key">
                 <span class="font-bold"> {{recipe.title}}</span>
                 <span class="block text-gray-500 text-sm">{{recipe.author}}</span>
             </router-link>
